@@ -5,7 +5,7 @@ public class Fact {
     private final String text;
     private final String type;
     private final String user;
-    private final int upvotes;
+    private final int upVotes;
 
     public String getId() {
         return id;
@@ -24,7 +24,7 @@ public class Fact {
     }
 
     public int getUpvotes() {
-        return upvotes;
+        return upVotes;
     }
 
     public Fact(
@@ -32,12 +32,12 @@ public class Fact {
             @JsonProperty("text") String text,
             @JsonProperty("type") String type,
             @JsonProperty("user") String user,
-            @JsonProperty("upvotes") int upvotes) {
+            @JsonProperty("upvotes") int upVotes) {
         this.id = id;
         this.text = text;
         this.type = type;
         this.user = user;
-        this.upvotes = upvotes;
+        this.upVotes = upVotes;
     }
     @Override
     public String toString() {
@@ -46,7 +46,7 @@ public class Fact {
                 ", text='" + text + '\'' +
                 ", type='" + type + '\'' +
                 ", user='" + user + '\'' +
-                ", upvotes=" + upvotes +
+                ", upvotes=" + upVotes +
                 '}';
     }
 }
